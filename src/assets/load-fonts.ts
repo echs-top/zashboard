@@ -15,6 +15,7 @@ export const loadFonts = () => {
     createLink('https://unpkg.com/subsetted-fonts@latest/SarasaUiSC-Regular/SarasaUiSC-Regular.css')
     createLink('https://unpkg.com/subsetted-fonts@latest/PingFangSC-Regular/PingFangSC-Regular.css')
     createLink('https://unpkg.com/@fontsource/fira-sans')
+    createLink('https://unpkg.com/lxgw-wenkai-lite-webfont/lxgwwenkaimonolite-bold.css')
   } else if (__FONT__ === 'misans') {
     import('subsetted-fonts/MiSans-VF/MiSans-VF.css')
   } else if (__FONT__ === 'sarasa') {
@@ -23,11 +24,14 @@ export const loadFonts = () => {
     import('subsetted-fonts/PingFangSC-Regular/PingFangSC-Regular.css')
   } else if (__FONT__ === 'firasans') {
     import('@fontsource/fira-sans/index.css')
+  } else if (__FONT__ === 'lxgwwenkai') {
+    import('lxgw-wenkai-lite-webfont/lxgwwenkaimonolite-bold.css')
   } else if (__FONT__ === 'none') {
     // System UI fonts only; nothing bundled.
   } else {
     // 'all' (default): bundle every font.
     import('@fontsource/fira-sans/index.css')
+    import('lxgw-wenkai-lite-webfont/lxgwwenkaimonolite-bold.css')
     import('subsetted-fonts/MiSans-VF/MiSans-VF.css')
     import('subsetted-fonts/SarasaUiSC-Regular/SarasaUiSC-Regular.css')
     import('subsetted-fonts/PingFangSC-Regular/PingFangSC-Regular.css')

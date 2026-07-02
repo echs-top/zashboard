@@ -26,6 +26,7 @@ export enum FONTS {
   SARASA_UI = 'SarasaUi',
   PING_FANG = 'PingFang',
   FIRA_SANS = 'FiraSans',
+  LXGW_WenKai = 'LXGWWenKai',
   SYSTEM_UI = 'SystemUI',
 }
 
